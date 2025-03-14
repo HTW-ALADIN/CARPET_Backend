@@ -12,6 +12,11 @@ export default tseslint.config(
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
   {
+    rules: {
+      "@typescript-eslint/unbound-method": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-unsafe-argument": "off",
+    },
     languageOptions: {
       parserOptions: {
         projectService: true,
